@@ -13,10 +13,10 @@ router.post("/add",async(req,res)=>{
         }
     )
 })
- 
-// router.get("/view",async(req,res)=>{
-//     let data=await bookModel.find()
-//     res.json(data)
-// })
+
+router.get("/view",async(req,res)=>{
+    let data=await bookModel.find()
+    res.json(data)
+})
 
 module.exports=router
